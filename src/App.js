@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/NavbarComp'
 import AboutMe from './components/AboutMeComp'
+import Project from './components/ProjectComp'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -21,9 +22,9 @@ function App() {
       <ScrollableAnchor id={'projects'}>
         <Container>
           <Row>
-            <Col> <AboutMe/> </Col>
-            <Col> <AboutMe/> </Col>
-            <Col> <AboutMe/> </Col>
+            <Col> <Project/> </Col>
+            <Col> <Project/> </Col>
+            <Col> <Project/> </Col>
           </Row>
         </Container>
       </ScrollableAnchor>
