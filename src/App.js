@@ -1,10 +1,33 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import Navbar from './components/NavbarComp'
+import AboutMe from './components/AboutMeComp'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import ScrollableAnchor from 'react-scrollable-anchor'
 function App() {
   return (
     <div className="App">
+      <div>
+        <Navbar/>
+      </div>
+      <ScrollableAnchor id={'about'}>
+        <div>
+          <AboutMe/>
+        </div>
+      </ScrollableAnchor>
+      <ScrollableAnchor id={'projects'}>
+        <Container>
+          <Row>
+            <Col> <AboutMe/> </Col>
+            <Col> <AboutMe/> </Col>
+            <Col> <AboutMe/> </Col>
+          </Row>
+        </Container>
+      </ScrollableAnchor>
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -19,6 +42,7 @@ function App() {
           Learn React
         </a>
       </header>
+
     </div>
   );
 }
