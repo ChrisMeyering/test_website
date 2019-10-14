@@ -14,11 +14,13 @@ function App() {
       <div>
         <Navbar/>
       </div>
+      var node = ReactDOM.findDOMNode(this.refs[])
       <ScrollableAnchor id={'about'}>
         <div>
           <AboutMe/>
         </div>
       </ScrollableAnchor>
+      
       <ScrollableAnchor id={'projects'}>
         <Container>
           <Row>
